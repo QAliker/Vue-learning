@@ -1,5 +1,6 @@
 <template>
     <Meals :meals="meals" />
+    <Footer />
 
 </template>
 
@@ -10,6 +11,8 @@ import store from '../store';
 import { computed } from '@vue/reactivity';
 import { useRoute } from 'vue-router';
 import Meals from '../components/Meals.vue';
+import Footer from '../components/Footer.vue';
+
 
 const route = useRoute()
 const ingredients = ref([])
